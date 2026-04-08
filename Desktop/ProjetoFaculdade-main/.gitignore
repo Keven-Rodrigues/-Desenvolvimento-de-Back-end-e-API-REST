@@ -1,0 +1,9 @@
+# Ignorar arquivos do Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.zip
+
+# Ignorar pastas grandes ou desnecessárias
+imagens/Thumbs.db
