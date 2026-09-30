@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Administrador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Área do Administrador</h1>
+    <p>Gerencie os campeões do site</p>
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="campeoes.html">Campeões</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="contato.html">Contato</a>
+    <a href="admin.html" class="ativo">Admin</a>
+</nav>
+
+<main>
+    <!-- LOGIN -->
+    <section id="areaLogin">
+        <h2>Login</h2>
+        <p>Entre para cadastrar, editar e excluir campeões.</p>
+        <form id="formLogin">
+            <label for="txtUsuario">Usuário:</label>
+            <input type="text" id="txtUsuario" placeholder="Digite o usuário" required>
+            <label for="txtSenha">Senha:</label>
+            <input type="password" id="txtSenha" placeholder="Digite a senha" required>
+            <div id="avisoLogin" class="aviso"></div>
+            <button type="submit">Entrar</button>
+        </form>
+    </section>
+
+    <!-- PAINEL (só aparece depois do login) -->
+    <div id="areaPainel" class="oculto">
+        <section>
+            <div class="barra-admin">
+                <h2 id="tituloForm">Novo campeão</h2>
+                <button id="btnSair" class="secundario">Sair</button>
+            </div>
+            <form id="formCampeao">
+                <input type="hidden" id="txtId">
+                <div class="duas-colunas">
+                    <div>
+                        <label for="txtNomeCampeao">Nome:</label>
+                        <input type="text" id="txtNomeCampeao" required>
+                    </div>
+                    <div>
+                        <label for="selFuncao">Função:</label>
+                        <select id="selFuncao" required>
+                            <option value="">Selecione...</option>
+                            <option>Lutador</option>
+                            <option>Maga</option>
+                            <option>Mago</option>
+                            <option>Atirador</option>
+                            <option>Atiradora</option>
+                            <option>Assassino</option>
+                            <option>Tanque</option>
+                            <option>Suporte</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="selImagem">Imagem:</label>
+                <select id="selImagem">
+                    <option value="imagens/padrao.svg">Padrão</option>
+                    <option value="imagens/garen.svg">Garen</option>
+                    <option value="imagens/ahri.svg">Ahri</option>
+                    <option value="imagens/jinx.svg">Jinx</option>
+                    <option value="imagens/gangplank.svg">Gangplank</option>
+                </select>
+                <label for="txtDescricao">Descrição:</label>
+                <textarea id="txtDescricao" rows="3"></textarea>
+                <div id="avisoForm" class="aviso"></div>
+                <button type="submit" id="btnSalvar">Salvar</button>
+                <button type="button" id="btnCancelar" class="secundario oculto">Cancelar edição</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Campeões cadastrados</h2>
+            <div class="tabela-rolagem">
+                <table>
+                    <thead><tr><th>ID</th><th>Nome</th><th>Função</th><th>Ações</th></tr></thead>
+                    <tbody id="tabelaAdmin"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Mensagens recebidas (contato)</h2>
+            <div id="listaContatos"></div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>Projeto Prático - Keven Rodrigues Faria | Sistemas de Informação - Unifafibe</p>
+    <a href="index.html">Voltar ao início</a>
+</footer>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

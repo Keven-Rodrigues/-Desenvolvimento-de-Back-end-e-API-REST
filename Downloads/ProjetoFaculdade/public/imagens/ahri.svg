@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#c04fd6"/>
+      <stop offset="100%" stop-color="#2a0b4a"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <g fill="none" stroke="#f0d070" stroke-opacity="0.35">
+    <circle cx="200" cy="170" r="130" stroke-width="2"/>
+    <circle cx="200" cy="170" r="100" stroke-width="1"/>
+    <path d="M200 20 L215 170 L200 320 L185 170 Z" stroke-width="1"/>
+    <path d="M50 170 L200 155 L350 170 L200 185 Z" stroke-width="1"/>
+  </g>
+  <circle cx="200" cy="170" r="88" fill="#0a0f1f" fill-opacity="0.55" stroke="#c8a23e" stroke-width="4"/>
+  <text x="200" y="205" text-anchor="middle" font-family="Georgia, serif" font-size="110" font-weight="bold" fill="#f0d070">A</text>
+  <rect x="0" y="315" width="400" height="85" fill="#0a0f1f" fill-opacity="0.75"/>
+  <rect x="0" y="315" width="400" height="4" fill="#c8a23e"/>
+  <text x="200" y="360" text-anchor="middle" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="#f0d070" letter-spacing="3">AHRI</text>
+  <text x="200" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#a8b8d0" letter-spacing="4">MAGA</text>
+</svg>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Campeões</h1>
+    <p>Alguns campeões populares do jogo</p>
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="campeoes.html" class="ativo">Campeões</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="contato.html">Contato</a>
+    <a href="admin.html">Admin</a>
+</nav>
+
+<main>
+    <section>
+        <div class="barra-admin">
+            <h2>Lista de campeões</h2>
+            <input type="text" id="txtBusca" placeholder="Buscar por nome..." style="max-width:250px">
+        </div>
+        <div id="aviso" class="aviso erro"></div>
+        <div class="tabela-rolagem">
+            <table>
+                <thead><tr><th>Campeão</th><th>Função</th></tr></thead>
+                <tbody id="tabelaCampeoes"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <div id="gradeCampeoes" class="grade"></div>
+</main>
+
+<footer>
+    <p>Projeto Prático - Keven Rodrigues Faria | Sistemas de Informação - Unifafibe</p>
+    <a href="index.html">Voltar ao início</a>
+</footer>
+
+<script src="js/campeoes.js"></script>
+</body>
+</html>

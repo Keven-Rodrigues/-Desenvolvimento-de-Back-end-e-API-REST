@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campeões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Campeões</h1>
+    <p>Consulte, cadastre, edite e remova campeões — dados vindos da API</p>
+</header>
+
+<hr>
+
+<nav>
+    <a href="index.html">Início</a> |
+    <a href="campeoes.html">Campeões</a> |
+    <a href="mapa.html">Mapa</a> |
+    <a href="contato.html">Contato</a>
+</nav>
+
+<hr>
+
+<main>
+
+    <!-- Barra de ações: status da API, filtros e login do admin -->
+    <section id="barra-acoes" class="barra-acoes">
+        <div id="status-api" class="status-api">
+            <span class="bolinha" id="bolinha-status"></span>
+            <span id="texto-status">Conectando à API...</span>
+        </div>
+
+        <div class="filtros" id="filtros">
+            <!-- filtros de função são criados via JS a partir dos dados -->
+        </div>
+
+        <div class="area-admin">
+            <button id="btn-abrir-login" class="btn-secundario">Área do Admin</button>
+            <div id="painel-logado" class="painel-logado escondido">
+                <span>Admin conectado</span>
+                <button id="btn-novo-campeao" class="btn-primario">+ Novo Campeão</button>
+                <button id="btn-logout" class="btn-secundario">Sair</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grade de campeões, preenchida via JS -->
+    <section id="grade-campeoes" class="grade-campeoes" aria-live="polite">
+        <!-- os cards (ou o esqueleto de carregamento) entram aqui -->
+    </section>
+
+</main>
+
+<hr>
+
+<footer>
+    <a href="index.html">Voltar ao início</a>
+</footer>
+
+<!-- Modal de login do admin -->
+<div id="modal-login" class="overlay-modal escondido">
+    <div class="caixa-modal">
+        <button class="fechar-modal" data-fechar="modal-login">&times;</button>
+        <h2>Login do Admin</h2>
+        <form id="form-login">
+            <label for="login-usuario">Usuário</label>
+            <input type="text" id="login-usuario" autocomplete="username" required>
+
+            <label for="login-senha">Senha</label>
+            <input type="password" id="login-senha" autocomplete="current-password" required>
+
+            <p class="erro-form" id="erro-login"></p>
+
+            <button type="submit" class="btn-primario">Entrar</button>
+        </form>
+    </div>
+</div>
+
+<!-- Modal de criar/editar campeão -->
+<div id="modal-campeao" class="overlay-modal escondido">
+    <div class="caixa-modal">
+        <button class="fechar-modal" data-fechar="modal-campeao">&times;</button>
+        <h2 id="titulo-modal-campeao">Novo Campeão</h2>
+        <form id="form-campeao">
+            <input type="hidden" id="campeao-id">
+
+            <label for="campeao-nome">Nome</label>
+            <input type="text" id="campeao-nome" required>
+
+            <label for="campeao-funcao">Função</label>
+            <input type="text" id="campeao-funcao" placeholder="Ex: Lutador, Maga, Atiradora" required>
+
+            <label for="campeao-descricao">Descrição</label>
+            <textarea id="campeao-descricao" rows="3"></textarea>
+
+            <label for="campeao-imagem">Nome do arquivo de imagem</label>
+            <input type="text" id="campeao-imagem" placeholder="Ex: garen.jpg">
+
+            <p class="erro-form" id="erro-campeao"></p>
+
+            <button type="submit" class="btn-primario" id="btn-salvar-campeao">Salvar</button>
+        </form>
+    </div>
+</div>
+
+<!-- Área de notificações (toasts) -->
+<div id="area-toasts" class="area-toasts"></div>
+
+<script src="assets/js/campeoes.js"></script>
+</body>
+</html>

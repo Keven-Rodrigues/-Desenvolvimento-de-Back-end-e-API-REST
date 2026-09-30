@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Contato</h1>
+    <p>Envie sua opinião ou sugestão</p>
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="campeoes.html">Campeões</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="contato.html" class="ativo">Contato</a>
+    <a href="admin.html">Admin</a>
+</nav>
+
+<main>
+    <form id="formContato" novalidate>
+        <fieldset>
+            <legend>Formulário de Contato</legend>
+
+            <div class="duas-colunas">
+                <div>
+                    <label for="txtNome">Nome:</label>
+                    <input type="text" id="txtNome" name="nome" placeholder="Digite seu nome" required>
+                    <p class="msg-erro" id="erroNome"></p>
+                </div>
+                <div>
+                    <label for="txtEmail">Email:</label>
+                    <input type="email" id="txtEmail" name="email" placeholder="voce@email.com" required>
+                    <p class="msg-erro" id="erroEmail"></p>
+                </div>
+            </div>
+
+            <label>Gênero:</label>
+            <div class="linha-opcoes">
+                <label><input type="radio" name="genero" value="Masculino"> Masculino</label>
+                <label><input type="radio" name="genero" value="Feminino"> Feminino</label>
+                <label><input type="radio" name="genero" value="Outro"> Outro</label>
+                <label><input type="radio" name="genero" value="Prefiro não informar" checked> Prefiro não informar</label>
+            </div>
+
+            <label>Interesses:</label>
+            <div class="linha-opcoes">
+                <label><input type="checkbox" name="interesses" value="Jogar LoL"> Jogar LoL</label>
+                <label><input type="checkbox" name="interesses" value="Assistir campeonatos"> Assistir campeonatos</label>
+                <label><input type="checkbox" name="interesses" value="Fazer conteúdo"> Fazer conteúdo</label>
+            </div>
+
+            <label for="selNivel">Seu elo: <small>(opcional)</small></label>
+            <select id="selNivel" name="nivel">
+                <option value="">Selecione...</option>
+                <option>Ferro</option>
+                <option>Bronze</option>
+                <option>Prata</option>
+                <option>Ouro</option>
+                <option>Platina</option>
+                <option>Diamante</option>
+            </select>
+
+            <label for="txtMensagem">Mensagem:</label>
+            <textarea id="txtMensagem" name="mensagem" rows="5" maxlength="500" placeholder="Escreva sua opinião ou sugestão..." required></textarea>
+            <div class="contador"><span id="contador">0</span>/500</div>
+            <p class="msg-erro" id="erroMensagem"></p>
+
+            <div id="aviso" class="aviso"></div>
+
+            <button type="submit">Enviar</button>
+            <button type="reset" class="secundario">Limpar</button>
+        </fieldset>
+    </form>
+</main>
+
+<footer>
+    <p>Projeto Prático - Keven Rodrigues Faria | Sistemas de Informação - Unifafibe</p>
+    <a href="index.html">Voltar ao início</a>
+</footer>
+
+<script src="js/contato.js"></script>
+</body>
+</html>

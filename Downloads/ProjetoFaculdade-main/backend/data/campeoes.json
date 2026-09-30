@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "nome": "Garen",
+    "funcao": "Lutador",
+    "descricao": "Lutador resistente focado em dano físico.",
+    "imagem": "garen.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Ahri",
+    "funcao": "Maga",
+    "descricao": "Maga ágil com alto potencial de dano mágico.",
+    "imagem": "ahri.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "Jinx",
+    "funcao": "Atiradora",
+    "descricao": "Atiradora especializada em dano à distância.",
+    "imagem": "jinx.jpg"
+  },
+  {
+    "id": 4,
+    "nome": "Gangplank",
+    "funcao": "Lutador",
+    "descricao": "Lutador estratégico conhecido por seus barris explosivos.",
+    "imagem": "gangplank.jpg"
+  }
+]

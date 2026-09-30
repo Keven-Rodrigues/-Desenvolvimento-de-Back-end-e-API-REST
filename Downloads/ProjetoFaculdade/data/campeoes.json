@@ -1,0 +1,23 @@
+[
+  {
+    "id": 2,
+    "nome": "Ahri",
+    "funcao": "Maga",
+    "descricao": "Maga ágil com alto potencial de dano mágico.",
+    "imagem": "imagens/ahri.svg"
+  },
+  {
+    "id": 3,
+    "nome": "Jinx",
+    "funcao": "Atiradora",
+    "descricao": "Atiradora especializada em dano à distância.",
+    "imagem": "imagens/jinx.svg"
+  },
+  {
+    "id": 4,
+    "nome": "Gangplank",
+    "funcao": "Lutador",
+    "descricao": "Lutador estratégico conhecido por seus barris explosivos.",
+    "imagem": "imagens/gangplank.svg"
+  }
+]

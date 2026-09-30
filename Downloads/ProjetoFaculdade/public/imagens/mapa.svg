@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="rio" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2a8fa8"/><stop offset="1" stop-color="#1c6f8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="#17301f"/>
+  <!-- selva -->
+  <g fill="#1f4a2b" stroke="#2e6b3e" stroke-width="2">
+    <path d="M110 200 Q200 170 250 260 Q200 330 120 300 Z"/>
+    <path d="M350 300 Q400 270 480 400 Q400 430 340 380 Z"/>
+    <path d="M330 130 Q420 110 470 190 Q400 230 340 200 Z"/>
+    <path d="M130 400 Q200 370 260 430 Q220 490 140 470 Z"/>
+  </g>
+  <!-- rio -->
+  <path d="M40 40 L110 40 L560 490 L560 560 L490 560 L40 110 Z" fill="url(#rio)" opacity="0.9"/>
+  <!-- rotas -->
+  <g fill="none" stroke="#c9b27a" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 540 L60 60 L540 60"/>
+    <path d="M60 540 L540 540 L540 60"/>
+    <path d="M60 540 L540 60"/>
+  </g>
+  <g fill="none" stroke="#8a7346" stroke-width="2" stroke-dasharray="6 8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 540 L60 60 L540 60"/>
+    <path d="M60 540 L540 540 L540 60"/>
+    <path d="M60 540 L540 60"/>
+  </g>
+  <!-- bases -->
+  <circle cx="75" cy="525" r="55" fill="#2f6fd6" stroke="#f0d070" stroke-width="4"/>
+  <circle cx="525" cy="75" r="55" fill="#c0392b" stroke="#f0d070" stroke-width="4"/>
+  <g font-family="Arial, sans-serif" font-weight="bold" fill="#fff" text-anchor="middle" font-size="15">
+    <text x="75" y="530">AZUL</text>
+    <text x="525" y="80">VERMELHO</text>
+  </g>
+  <!-- torres -->
+  <g stroke="#f0d070" stroke-width="2">
+    <g fill="#2f6fd6">
+      <circle cx="60" cy="380" r="9"/><circle cx="60" cy="260" r="9"/>
+      <circle cx="220" cy="540" r="9"/><circle cx="380" cy="540" r="9"/>
+      <circle cx="240" cy="360" r="9"/><circle cx="180" cy="420" r="9"/>
+    </g>
+    <g fill="#c0392b">
+      <circle cx="540" cy="220" r="9"/><circle cx="540" cy="340" r="9"/>
+      <circle cx="220" cy="60" r="9"/><circle cx="380" cy="60" r="9"/>
+      <circle cx="360" cy="240" r="9"/><circle cx="420" cy="180" r="9"/>
+    </g>
+  </g>
+  <!-- objetivos -->
+  <circle cx="190" cy="190" r="26" fill="#5b2a86" stroke="#f0d070" stroke-width="3"/>
+  <circle cx="410" cy="410" r="26" fill="#d67a2f" stroke="#f0d070" stroke-width="3"/>
+  <g font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">
+    <text x="190" y="194">BARÃO</text>
+    <text x="410" y="414">DRAGÃO</text>
+  </g>
+  <!-- rótulos -->
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#f0d070" text-anchor="middle" letter-spacing="2">
+    <text x="130" y="42">ROTA SUPERIOR</text>
+    <text x="470" y="582">ROTA INFERIOR</text>
+    <text x="300" y="290" transform="rotate(-45 300 300)">ROTA CENTRAL</text>
+  </g>
+  <rect x="3" y="3" width="594" height="594" fill="none" stroke="#c8a23e" stroke-width="6"/>
+</svg>
