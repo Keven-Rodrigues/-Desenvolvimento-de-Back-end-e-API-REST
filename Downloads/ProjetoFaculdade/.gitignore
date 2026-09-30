@@ -1,9 +1,12 @@
-# Ignorar arquivos do Windows
+# Dependências
+node_modules/
+
+# Arquivos do sistema
+.DS_Store
 Thumbs.db
-ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 *.zip
 
-# Ignorar pastas grandes ou desnecessárias
-imagens/Thumbs.dbnode_modules/
+# Logs e cache
+npm-debug.log*
